@@ -1,0 +1,133 @@
+.tips_for_designing_page {
+    width: 100%;
+    padding: 40px 10%;
+    display: flex;
+    align-items: center;
+}
+
+.tips_for_designing_text_container {
+    width: 50%;
+    height: 100%;
+    padding: 43px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.tips_for_designing_text_container h2 {
+    font-size: 35px;
+    width: 320px;
+    position: relative;
+    z-index: 1;
+}
+
+.tips_for_designing_text_container h2::after {
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 105px;
+    z-index: -1;
+    background: #E0E7EC;
+    left: -20px;
+    top: -22px;
+}
+
+.tips_for_designing_text_container .tips_for_designing_text_index_card {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tips_for_designing_text_index_card .index_item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.index_item b {
+    font-size: 45px;
+    color: #EDBF90;
+}
+
+.index_item span {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.tips_for_designing_img_container {
+    width: 50%;
+    height: 100%;
+
+}
+
+.tips_for_designing_img_container .tips_for_designing_img_item {
+    width: 100%;
+    height: 100%;
+}
+.tips_for_designing_img_container .tips_for_designing_img_item img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:1290px) {
+    .tips_for_designing_page {
+        display: grid;
+        grid-template-columns: repeat(1 , 100%);
+    }
+
+    .tips_for_designing_text_container {
+        width: 100%;
+    }
+    .tips_for_designing_img_container {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media (max-width:1070px) {
+    .tips_for_designing_page {
+        padding: 20px 5%;
+    }
+    .tips_for_designing_text_container h2 {
+        font-size: 22px;
+        width: 220px;
+    }
+
+    .tips_for_designing_text_container h2::after {
+        width: 100px;
+        height: 80px;
+    }
+
+    .index_item b  {
+        font-size: 22px;
+    }
+
+    .index_item span {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:780px) {
+    .tips_for_designing_img_container {
+        height: 350px;
+    }
+}
+
+@media (max-width:640px) {
+    .tips_for_designing_img_container {
+        height: 300px;
+    }
+}
+
+@media (max-width:550px) {
+    .tips_for_designing_img_container {
+        height: 270px;
+    }
+}
+@media (max-width:460px) {
+    .tips_for_designing_img_container {
+        height: 200px;
+    }
+}

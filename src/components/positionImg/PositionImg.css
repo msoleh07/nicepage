@@ -1,0 +1,340 @@
+.position_img_page {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.position_img_item_border {
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    /* overflow: hidden; */
+}
+
+.pisation_img_item_text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 15px;
+}
+
+.pisation_img_item_text h2 {
+    font-size: 35px;
+    width: 400px;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+}
+
+.pisation_img_item_text h2::after {
+    position: absolute;
+    content: '';
+    width: 110px;
+    height: 100px;
+    background: #E0E7EC;
+    left: -15px;
+    top: -20px;
+    z-index: -1;
+}
+
+.pisation_img_item_text span {
+    font-size: 17px;
+    width: 520px;
+    line-height: 1.5;
+    font-weight: 200;
+    padding-left: 20px;
+}
+
+.pisation_img_item_text button {
+    width: 125px;
+    height: 37px;
+    font-size: 16px;
+    font-weight: 100;
+    border: none;
+    cursor: pointer;
+    background: #B8C7D0;
+    margin-left: 20px;
+}
+
+.pisation_img_item_text button:hover {
+    background: #a2aeb6;
+}
+
+.posation_item_img_border {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    padding: 0 20px;
+    padding-top: 340px;
+    /* background: red; */
+}
+
+.posation_item_img_border .position_card_img {
+    width: 330px;
+    height: 400px;
+    position: absolute;
+    top: -150px;
+    left: 120px;
+    background: url(https://househome.org/wp-content/uploads/2019/04/office-tips.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow:  35px -35px 0px 10px #00000084;
+    display: flex;
+    align-items: flex-end;
+}
+
+.position_card_img .position_small_card {
+    width: 130px;
+    height: 130px;
+    position: relative;
+}
+
+.position_card_img .position_item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #292F33;
+    bottom: -45px;
+    left: -35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+}
+
+.position_item b {
+    font-size: 50px;
+}
+
+.position_item span {
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.posation_item_img_border .position_title {
+    font-weight: 500; 
+    font-style: italic;
+    color: #1C1F22;
+    line-height: 1.5;
+}
+
+.position_icons_container {
+    width: 100%;
+    padding: 50px 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.position_icons_container .position_img_icons_card {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.position_icons_container .position_img_icons_card img {
+    width: 70px;
+    height: 70px;
+}
+
+.position_icons_container .position_img_icons_card b {
+    font-size: 17px;
+    font-weight: 900;
+}
+
+/* madia */
+
+@media  (max-width:1435px) {
+    .cart {
+     width: 100%;
+     padding: 20px 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center; 
+     padding-left: 70px;    
+    }
+}
+
+@media  (max-width:1270px) {
+    .posation_item_img_border .position_card_img {
+        top: -130px;
+        left: 140px;  
+        box-shadow:  30px -30px 0px 10px #00000084;
+    }
+    .cart{
+        padding-left: 80px;
+    }
+}
+
+@media  (max-width:1225px) {
+    .posation_item_img_border .position_card_img {
+        top: -130px;
+        left: 150px;  
+        box-shadow:  20px -20px 0px 10px #00000084;
+    }
+    .cart{
+        padding: 0;
+        padding-left: 90px;
+        
+    }
+}
+
+
+@media (max-width:1210px) {
+    .position_img_item_border{
+        flex-direction: column;
+    }
+    .pisation_img_item_text {
+        width: 100%;
+    }
+
+    .posation_item_img_border {
+        width: 100%;
+    }
+
+    .posation_item_img_border .position_card_img {
+        top: 30px;
+        left: 10px;
+        box-shadow:  0 0 0 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .position_card_img .position_item {
+        top: 0px;
+        left: 170px;
+        width: 180px;
+        background: #eef8fd;
+        color: #000;
+    }
+    
+    .cart{
+        margin-top: 140px;
+        display: block;
+        padding: 0;
+    }
+}
+
+@media (max-width:1070px)  {
+    .position_img_item_border {
+        padding: 0 5%;
+    }
+
+    .pisation_img_item_text h2 {
+        font-size: 24px;
+    }
+
+    .pisation_img_item_text h2::after {
+        width: 100px;
+        height: 80px;
+        top: -20px;
+    }
+
+    .cart {
+        width: 340px;
+        margin-top: 100px;
+        padding-left: 10px;
+    }
+
+    .position_icons_container {
+        padding: 30px 5%;
+        display: grid;
+        grid-template-columns: repeat(3  , 180px);
+        justify-content: start;
+        gap: 10px;
+    }
+
+    .posation_item_img_border .position_title {
+        padding: 0;
+    }
+
+    .position_icons_container .position_img_icons_card {
+        width: 100%;
+        height: 100%;
+        background: #f8fcfe;
+        padding: 15px 0;
+    }
+}
+
+@media (max-width:630px) {
+    .position_card_img .position_item {
+        left: 20px;
+        top: 20px;
+        width: 100%;
+        height: 100%;
+    }
+    .cart {
+        margin-top: 120px;
+    }
+
+    .pisation_img_item_text h2 {
+        font-size: 22px;
+        width: 350px;
+    }
+
+    .pisation_img_item_text h2::after {
+        width: 90px;
+        height: 80px;
+        top: -25px;
+    }
+
+    .position_icons_container {
+        grid-template-columns: repeat(2  , 170px); 
+    }
+
+    .pisation_img_item_text span {
+        padding-left: 10px;
+        width: 450px;
+    }
+    .pisation_img_item_text button {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:495px) {
+    .pisation_img_item_text span {
+        width: auto;
+    }
+
+    .posation_item_img_border .position_card_img {
+        width: 310px;
+        height: 330px;
+    }
+    .cart {
+        margin-top: 60px;
+    }
+
+    .position_icons_container .position_img_icons_card {
+        width: 100px;
+        height: 80px;
+        margin: 0 auto;
+    }
+    .position_icons_container .position_img_icons_card img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .position_icons_container .position_img_icons_card b {
+        font-size: 12px;
+    }
+
+    .position_card_img .position_small_card {
+        width: 100px;
+        height: 100px;
+    }
+
+    .position_item b {
+        font-size: 30px;
+    }
+    .position_item span {
+        font-size: 13px;
+    }
+}

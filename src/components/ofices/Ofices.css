@@ -1,0 +1,108 @@
+.ofices_page {
+    width: 100%;
+    height: 100vh;
+    background: url(https://www.avocor.com/wp-content/uploads/2023/03/img-home-office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: self-end;
+    padding: 0 10%;
+}
+
+.ofices_page .ofices_page_card {
+    background: #292F33;
+    position: relative;
+    padding: 6% 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ofices_page_card::after {
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 12px;
+    background: #fff;
+    left: -35px;
+    top: 30px;
+}
+
+.ofices_page_card h1 {
+    font-size: 60px;
+    color: #fff;
+    width: 350px;
+}
+
+.ofices_page_card p {
+    color: #fff;
+    width: 530px;
+    line-height: 1.5;
+}
+
+@media (max-width:1070px) {
+    .ofices_page {
+        height: 60vh;
+        padding: 0 5%;
+    }
+
+    .ofices_page .ofices_page_card {
+        width: 500px;
+    }
+
+    .ofices_page_card::after {
+        left: -20px;
+        width: 70px;
+        height: 10px;
+    }
+
+    .ofices_page .ofices_page_card h1 {
+        font-size: 30px;
+        width: 200px;
+        margin-top: 10px;
+    }
+
+    .ofices_page_card p {
+        width: 380px;
+    }
+}
+
+@media (max-width:630px) {
+    .ofices_page .ofices_page_card {
+        width: 400px;
+    }
+    .ofices_page_card p {
+        width: 300px;
+    }
+    .ofices_page_card::after  {
+        display: none;
+    }
+    .ofices_page .ofices_page_card h1 {
+        margin-top: 0;
+        font-size: 20px;
+        width: 120px;
+        line-height: 1.2;
+    }
+
+    .ofices_page {
+        height: 45vh;
+    }
+}
+
+@media (max-width:400px) {
+    .ofices_page .ofices_page_card {
+        width: 300px;
+        gap: 10px;
+        
+    }
+
+    .ofices_page .ofices_page_card h1 {
+        font-size: 18px;
+    }
+
+    .ofices_page_card p {
+        width: auto;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,223 @@
+.header_page {
+    width: 100%;
+    height: 70px;
+    background: #292F33;
+    display: flex;
+    padding: 0 10%;
+    align-items: center;
+    position: relative;
+}
+
+.header_page .header_sidebar_bars button {
+    border: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    background: transparent;
+}
+
+.header_sidebar_bars button  svg {
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+}
+
+.header_logo a {
+    color: #fff;
+    display: flex;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+
+.header_logo_img_border {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    display: none;
+}
+
+.header_logo_img_border .header_logo_img_item {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.header_logo_img_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header_logo_img_border h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+
+
+.header_links_border {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header_links_border .header_links {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+.header_links a {
+    color: #fff;
+    padding: 8px 13px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.header_links a::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    background-color: dodgerblue;
+    top: -100%;
+    left: 0px;
+    z-index: -1;
+    transition: all .4s linear;
+}
+
+.header_links a:hover::after {
+    width: 10px;
+    top: 0;
+}
+
+.header_links a::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    background-color: dodgerblue;
+    top: 0;
+    left: -100%;
+    z-index: -1;
+    transition: all .4s linear;
+}
+
+.header_links a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.header_links_border .header_login {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.header_login a {
+    color: #fff;
+    padding: 8px 13px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.header_login a::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    background-color: dodgerblue;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: all .3s linear;
+}
+
+.header_login a:hover::after {
+    width: 100%;
+    top: 0;
+}
+
+.header_login a::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    background-color: dodgerblue;
+    bottom: -100%;
+    right: 0;
+    z-index: -1;
+    transition: all .3s linear;
+}
+
+.header_login a:hover::before {
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width:1070px) {
+    .header_page {
+        padding: 0 5%;
+    }
+    .header_logo a {
+        font-size: 24px;
+    }
+    .header_login a,
+    .header_links a {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:880px) {
+    .header_links_border .header_login,
+    .header_links_border .header_links{
+        gap: 5px;
+        justify-content: flex-end;
+    }
+    .header_logo a {
+        display: none;
+    }
+    .header_logo_img_border {
+        display: flex;
+    }
+}
+
+@media (max-width:710px) {
+    .header_links_border {
+        display: none;
+    }
+    .header_page .header_sidebar_bars button {
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 20px;
+    }
+
+    
+}
+

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300&display=swap');
+
+.sidebar_page {
+    width: 100%;
+    background-color: #000000c6;
+    font-family: 'Karma', serif;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+
+.sidebar{
+    width: 17rem;
+    background-color: #fff;
+    padding: 1rem;
+    transition: all .3s linear;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.saidebar_top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid #e5e7eb; */
+    margin-bottom: 10px;
+}
+
+.saidebar_top .sidebar_close {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: #e5e7eb;
+    border-radius: 50%;
+}
+
+.sidebar_close svg {
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.sidebar_logo {
+    width: 3.4rem;
+    height: 3.5rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.saidebar_list {
+    list-style: none;
+
+}
+
+
+.saidebar_link {
+    display: inline-block;
+    background: #f3f4f6;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+    padding: .8rem 1rem;
+    display: flex;
+    margin-bottom: 1rem;
+    border-radius: .8rem;
+    border: none;
+    width: 100%;
+}
+
+.saidebar_icon {
+    font-size: 1.2rem;
+    display: inline-block;
+}
+
+.saidebar_name {
+    margin-left: .5rem;
+}
+
+.sidebar .sidebar_link_container {
+    width: 100%;
+    /* height: 250px; */
+    background: #eff0f4;
+    position: absolute;  
+    right: -100%;
+    top: 6.5rem;
+}
+
+.sidebar_link_container .sidebar_link_back_header {
+    width: 100%;
+    background-color: #d0d4d8;
+    padding: 10px 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+    color: #fff;
+}
+
+.sidebar_link_back_header button {
+    padding: 7px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ebf6fc;
+    cursor: pointer;
+}
+
+.sidebar_link_back_header button svg {
+    font-size: 17px;
+    color: #000000;
+}
+
+.sidebar_link_container .sidedar_ul_item {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    overflow-y: auto;
+    width: 100%;
+    height: 320px;
+    padding: 1rem 0;
+}
+
+.sidedar_ul_item li{
+    width: 100%;
+    padding: 10px 1rem ;
+    background: #fdfafa;
+    border-radius: 5px;
+}
